@@ -1,0 +1,138 @@
+body{
+    background-color: rgba(0, 63, 238, 0.877);
+}
+#nav{
+    background-color:transparent;
+}
+#nav-ul{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+   
+    color: orangered;
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+    
+}
+
+#nav-ul li:hover{
+    text-decoration: underline;
+}
+h3{
+    color: orangered;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+
+#home-drop{
+    list-style: none;
+    color: #2600ff;
+    position: absolute;
+   text-align: start;
+  
+   
+    margin-top:10px ;
+    width: auto;
+
+}
+#home-drop li{
+    padding: 10px;
+    transition: all 500ms ease;
+    margin-right: 0px;
+    width: 100%;
+    z-index: -1;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: rgba(3, 185, 230, 0.719);
+}
+#home-drop li:hover{
+    
+    background-color: hsl(88, 95%, 47%);
+}
+
+.mobile{
+    display: block;
+    width: 100%;
+}
+@media screen and (min-width:600px){
+    .head span{
+        display: none;
+    }
+    #nav-ul{
+        display: run-in;
+    }
+   
+   
+}
+@media screen and (max-width: 600px ){
+    #nav{
+        display: block;
+        width: 100%;
+       
+        justify-content: space-around;
+        position: relative;
+        z-index: 10;
+       
+        
+    }
+    #nav-ul{
+        display:none;
+        background-color: transparent;
+        position: absolute;
+        background-color: rgb(26, 21, 21);
+        width: 70%;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 1px 0px 0px 4px rgba(211, 224, 230, 0.719);
+        
+    }
+    #nav-ul li{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid wheat;
+        padding: 10px;
+        
+      
+    }
+    #nav-ul li:hover{
+        text-decoration: none;
+        background-color: white;
+    }
+   .head  span{
+       
+        font-weight: 900;
+        color: #fffb00;
+        font-size: 30px;
+        transform: rotate(90deg);
+        float: right;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    #home-drop li{
+        background-color: #e9decb;
+    }
+
+    .head{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+#para{
+    color: #2aa530;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#para p{
+    
+
+    color: rgb(250, 244, 244);
+
+}
